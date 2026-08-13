@@ -1,0 +1,396 @@
+\documentclass[10pt,a4paper]{article}
+
+% ------------------------------------------------
+% Packages
+% ------------------------------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.7in]{geometry}
+
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{multirow}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\usepackage[table]{xcolor}
+\usepackage{colortbl}
+
+\usepackage{titlesec}
+\usepackage{microtype}
+
+% ------------------------------------------------
+% Color Definitions
+% ------------------------------------------------
+\definecolor{primary}{RGB}{26,54,93}
+\definecolor{secondary}{RGB}{43,108,176}
+\definecolor{lightbg}{RGB}{247,250,252}
+\definecolor{tablehead}{RGB}{220,230,242}
+
+% ------------------------------------------------
+% Typography and Section Styling
+% ------------------------------------------------
+\titleformat{\section}
+{\color{primary}\large\bfseries}
+{\thesection}{1em}{}
+[\titlerule]
+
+\titleformat{\subsection}
+{\color{secondary}\normalsize\bfseries}
+{\thesubsection}{1em}{}
+
+% ------------------------------------------------
+% Table Formatting
+% ------------------------------------------------
+\renewcommand{\arraystretch}{1.5}
+\setlength{\tabcolsep}{6pt}
+
+% ------------------------------------------------
+% Document Title
+% ------------------------------------------------
+\title{
+	\textbf{\color{primary}ER Membrane Protein Classification (Types I--IV)}\\[0.3em]
+	\large\textit{
+		A Comparative Guide for CSIR NET Life Sciences
+	}\\
+	\normalsize
+	\textit{(Reference: Lodish \& Cooper)}
+}
+
+\author{\textbf{Expert High-Yield Reference Summary}}
+
+\date{\small Compiled for CSIR NET Life Sciences Preparation}
+
+% ------------------------------------------------
+% Document Begins
+% ------------------------------------------------
+\begin{document}
+	
+	\maketitle
+	
+	% =================================================
+	\section{Introduction and Theoretical Framework}
+	% =================================================
+	
+	Integral membrane proteins of the Endoplasmic Reticulum (ER) are classified according to:
+	
+	\begin{itemize}
+		\item Orientation of the N- and C-termini
+		\item Presence or absence of cleavable signal peptides
+		\item Nature of topogenic sequences
+		\item Mechanism of insertion through the \textbf{Sec61 translocon}
+	\end{itemize}
+	
+	For the CSIR NET Life Sciences examination, understanding the following concepts is essential:
+	
+	\begin{itemize}
+		\item \textbf{Positive-Inside Rule}
+		\item \textbf{Signal-Anchor (SA) sequences}
+		\item \textbf{Stop-Transfer Anchor (STA) sequences}
+		\item Membrane topology prediction
+	\end{itemize}
+	
+	% =================================================
+	\section{Comprehensive Comparative Table}
+	% =================================================
+	
+	\begin{table}[h!]
+		\centering
+		\small
+		
+		\begin{tabular}{|
+				>{\raggedright\arraybackslash}m{3.1cm}|
+				>{\raggedright\arraybackslash}m{3\documentclass[a4paper,12pt]{article}
+
+\usepackage{ucs}
+\usepackage[utf8]{inputenc}
+\usepackage{babel}
+\usepackage{fontenc}
+\usepackage{graphicx}
+\usepackage{mhchem}
+
+\usepackage[dvips]{hyperref}
+
+\author{Manpreet Singh}
+\date{8/9/26}
+
+\begin{document}
+
+				                                 \end{document}
+.1cm}|
+				>{\raggedright\arraybackslash}m{3.1cm}|
+				>{\raggedright\arraybackslash}m{3.1cm}|
+				>{\raggedright\arraybackslash}m{3.1cm}|}
+			
+			\hline
+			
+			\rowcolor{tablehead}
+			
+			\textbf{Feature}
+			&
+			\textbf{Type I}
+			&
+			\textbf{Type II}
+			&
+			\textbf{Type III}
+			&
+			\textbf{Type IV (Multipass)}
+			\\
+			
+			\hline
+			
+			\textbf{Pass Status}
+			&
+			Single-pass
+			&
+			Single-pass
+			&
+			Single-pass
+			&
+			\textbf{Multipass} membrane protein
+			\\
+			
+			\hline
+			
+			\rowcolor{lightbg}
+			
+			\textbf{N-terminus Location}
+			&
+			\textbf{ER lumen}
+			&
+			\textbf{Cytosol}
+			&
+			\textbf{ER lumen}
+			&
+			Variable (IV-A or IV-B)
+			\\
+			
+			\hline
+			
+			\textbf{C-terminus Location}
+			&
+			\textbf{Cytosol}
+			&
+			\textbf{ER lumen}
+			&
+			\textbf{Cytosol}
+			&
+			Depends on number of TM segments
+			\\
+			
+			\hline
+			
+			\rowcolor{lightbg}
+			
+			\textbf{N-terminal Signal Sequence}
+			&
+			\textbf{Present and cleavable}
+			&
+			Absent
+			&
+			Absent
+			&
+			Absent
+			\\
+			
+			\hline
+			
+			\textbf{Topogenic Sequences}
+			&
+			\textbf{Stop-Transfer Anchor (STA)}
+			&
+			\textbf{Signal-Anchor (SA)}
+			&
+			\textbf{Signal-Anchor (SA)}
+			&
+			Alternating \textbf{SA} and \textbf{STA}
+			\\
+			
+			\hline
+			
+			\rowcolor{lightbg}
+			
+			\textbf{Mechanism of Insertion}
+			&
+			Insertion initiated by N-terminal signal peptide; STA halts translocation and anchors protein
+			&
+			Internal SA sequence acts as targeting signal and membrane anchor
+			&
+			Internal SA sequence acts as targeting signal and membrane anchor
+			&
+			Sequential insertion using alternating SA and STA sequences
+			\\
+			
+			\hline
+			
+			\textbf{Positive-Inside Rule}
+			&
+			Positive residues usually remain on cytosolic side
+			&
+			Positive charges located \textbf{before} SA sequence
+			&
+			Positive charges located \textbf{after} SA sequence
+			&
+			Charge distribution determines loop orientation
+			\\
+			
+			\hline
+			
+			\rowcolor{lightbg}
+			
+			\textbf{Classic Examples}
+			&
+			\begin{itemize}
+				\item Glycophorin A
+				\item LDL receptor
+				\item Influenza HA
+			\end{itemize}
+			&
+			\begin{itemize}
+				\item Transferrin receptor
+				\item Galactosyltransferase
+				\item Neuraminidase
+			\end{itemize}
+			&
+			\begin{itemize}
+				\item Cytochrome P450
+			\end{itemize}
+			&
+			\begin{itemize}
+				\item IV-A: GLUT, Connexin
+				\item IV-B: GPCRs (Rhodopsin)
+			\end{itemize}
+			\\
+			
+			\hline
+			
+		\end{tabular}
+		
+		\caption{
+			Structural and mechanistic comparison of Type I--IV ER membrane proteins
+		}
+		
+		\label{tab:er_proteins}
+		
+	\end{table}
+	
+	% =================================================
+	\section{Core High-Yield Principles for CSIR NET}
+	% =================================================
+	
+	% -------------------------------------------------
+	\subsection{1. Positive-Inside Rule}
+	% -------------------------------------------------
+	
+	The orientation of membrane proteins is strongly influenced by the distribution of positively charged amino acids (\textbf{Arginine and Lysine}) surrounding the hydrophobic transmembrane segment.
+	
+	\begin{itemize}
+		\item The side containing more positive charges remains in the \textbf{cytosol}
+		\item This rule helps determine final membrane topology
+	\end{itemize}
+	
+	\textbf{Examples:}
+	
+	\begin{itemize}
+		\item \textbf{Type II proteins:}
+		Positive charges occur \textbf{before} the SA sequence
+		$\Rightarrow$
+		N-terminus remains cytosolic
+		
+		\item \textbf{Type III proteins:}
+		Positive charges occur \textbf{after} the SA sequence
+		$\Rightarrow$
+		C-terminus remains cytosolic
+	\end{itemize}
+	
+	% -------------------------------------------------
+	\subsection{2. Topogenic Sequence Definitions}
+	% -------------------------------------------------
+	
+	\begin{itemize}
+		
+		\item
+		\textbf{Signal-Anchor (SA) Sequence:}
+		
+		An internal hydrophobic sequence that:
+		\begin{itemize}
+			\item Directs the ribosome to the ER membrane
+			\item Interacts with SRP
+			\item Remains embedded as a transmembrane helix
+			\item Is \textbf{not cleaved}
+		\end{itemize}
+		
+		\item
+		\textbf{Stop-Transfer Anchor (STA) Sequence:}
+		
+		A hydrophobic sequence that:
+		\begin{itemize}
+			\item Stops translocation through the translocon
+			\item Causes lateral release into the lipid bilayer
+			\item Forms a membrane-spanning segment
+		\end{itemize}
+		
+	\end{itemize}
+	
+	% =================================================
+	\section{Quick Exam-Oriented Summary}
+	% =================================================
+	
+	\begin{center}
+		
+		\begin{tabular}{|c|c|c|}
+			\hline
+			
+			\rowcolor{tablehead}
+			
+			\textbf{Protein Type}
+			&
+			\textbf{Key Sequence}
+			&
+			\textbf{Orientation}
+			\\
+			
+			\hline
+			
+			Type I
+			&
+			Signal peptide + STA
+			&
+			N lumen / C cytosol
+			\\
+			
+			\hline
+			
+			Type II
+			&
+			Internal SA
+			&
+			N cytosol / C lumen
+			\\
+			
+			\hline
+			
+			Type III
+			&
+			Internal SA
+			&
+			N lumen / C cytosol
+			\\
+			
+			\hline
+			
+			Type IV
+			&
+			Multiple SA + STA
+			&
+			Multipass topology
+			\\
+			
+			\hline
+			
+		\end{tabular}
+		
+	\end{center}
+	
+\end{document}

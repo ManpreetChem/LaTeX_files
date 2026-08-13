@@ -1,0 +1,917 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{hyperref}
+\usepackage{physics}
+\usepackage{chemformula}
+\usepackage{upgreek}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage[T1]{fontenc}
+
+\title{\textbf{Spectroscopic Term Symbols}}
+\author{Manpreet Singh}
+\date{}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+%----------------------------------------------------------------------
+\section{Quantum Numbers}
+%----------------------------------------------------------------------
+
+To completely describe an electron in an atom, four quantum numbers are needed: energy ($n$), angular momentum ($\ell$), magnetic moment ($m_\ell$), and spin ($m_s$).
+
+The first quantum number describes the electron shell, or energy level, of an atom. The value of $n$ ranges from 1 to the shell containing the outermost electron.
+
+\begin{table}[H]
+\centering
+\caption{Quantum Numbers}
+\begin{tabular}{lll}
+\toprule
+\textbf{Number} & \textbf{Symbol} & \textbf{Possible Values} \\
+\midrule
+Principal Quantum Number & $n$ & $1, 2, 3, 4, \ldots$ \\
+Angular Momentum Quantum Number & $\ell$ & $0, 1, 2, 3, \ldots, (n-1)$ \\
+Magnetic Quantum Number & $m_\ell$ & $-\ell, \ldots, -1, 0, +1, \ldots, +\ell$ \\
+Spin Quantum Number & $m_s$ & $+\tfrac{1}{2},\ -\tfrac{1}{2}$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Orbital Designations}
+\begin{tabular}{ccccccc}
+\toprule
+$n$ & $\ell$ & $m_\ell$ & \textbf{No.\ of Orbitals} & \textbf{Orbital Name} & \textbf{No.\ of Electrons} \\
+\midrule
+1 & 0 & 0 & 1 & 1s & 2 \\
+\midrule
+\multirow{2}{*}{2} & 0 & 0 & 1 & 2s & 2 \\
+ & 1 & $-1, 0, +1$ & 3 & 2p & 6 \\
+\midrule
+\multirow{3}{*}{3} & 0 & 0 & 1 & 3s & 2 \\
+ & 1 & $-1, 0, +1$ & 3 & 3p & 6 \\
+ & 2 & $-2,-1,0,+1,+2$ & 5 & 3d & 10 \\
+\midrule
+\multirow{4}{*}{4} & 0 & 0 & 1 & 4s & 2 \\
+ & 1 & $-1,0,+1$ & 3 & 4p & 6 \\
+ & 2 & $-2,-1,0,+1,+2$ & 5 & 4d & 10 \\
+ & 3 & $-3,-2,-1,0,+1,+2,+3$ & 7 & 4f & 14 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%----------------------------------------------------------------------
+\section{Term Symbols}
+%----------------------------------------------------------------------
+
+\begin{quote}
+``The symbol which indicates electronic configuration \& different energy states of atom is called term symbol.''
+\end{quote}
+
+Term symbols are represented as $^{2S+1}L_J$.
+
+HN Russell and FA Saunders introduced a system to fully represent the position of electrons in an atom. According to this method, in a multi-electron system, many different arrangements of electrons are possible. A term symbol is given for the ground state arrangement which follows all the laws (Hund's, Pauli, Aufbau etc.). Term symbols are assigned using the R--S coupling scale or L--S coupling scale.
+
+\subsection{The Russell--Saunders Coupling Scheme (R--S or L--S Coupling)}
+
+This scheme applies to smaller atoms ($Z < 30$) having less interaction between spin and orbital angular momentum.
+
+The term symbol for the ground state configuration is:
+\[
+^{2S+1}L_J
+\]
+where:
+\begin{itemize}
+  \item $2S+1$ is the spin multiplicity,
+  \item $L$ is the orbital angular momentum,
+  \item $J$ is the total angular momentum.
+\end{itemize}
+
+All terms are determined by calculating:
+\begin{enumerate}
+  \item \textbf{s--s coupling}, which gives total spin angular momentum ($S$)
+  \item \textbf{l--l coupling}, which gives total orbital angular momentum ($L$)
+  \item \textbf{L--S coupling}, which gives total angular momentum ($J$)
+\end{enumerate}
+
+\subsubsection{(1) s--s Coupling (S)}
+
+The value of the resulting spin angular momentum is obtained from the unpaired electrons in the outer orbit of the atom.
+\[
+S = s_1 + s_2 + s_3 + \cdots
+\]
+
+\textbf{Example:} For $\mathrm{P}^3$ (three unpaired electrons):
+\[
+S = \tfrac{1}{2} + \tfrac{1}{2} + \tfrac{1}{2} = \tfrac{3}{2}
+\]
+Spin multiplicity: $2S+1 = 2\!\left(\tfrac{3}{2}\right)+1 = 4$
+
+Paired electron spins cancel due to opposite spin.
+
+\subsubsection{(2) l--l Coupling (L)}
+
+Total orbital angular momentum is the sum of the orbital angular momentum $\ell$ of each electron:
+\[
+L = m_{\ell_1} + m_{\ell_2} + m_{\ell_3} + \cdots
+\]
+
+The value of $L$ is assigned using the following letter designations:
+
+\begin{table}[H]
+\centering
+\begin{tabular}{ccccccccc}
+\toprule
+$L$ & 0 & 1 & 2 & 3 & 4 & 5 & 6 \\
+\midrule
+Term & S & P & D & F & G & H & I \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Example:} For $\mathrm{d}^7$, with $m_\ell = +2,+1,0,-1,-2$:
+\[
+L = 2(+2) + 2(+1) + 1(0) + 1(-1) + 1(-2) = 4+2+0-1-2 = 3 \Rightarrow F\text{ term}
+\]
+
+\subsubsection{(3) L--S Coupling (J)}
+
+The total orbital angular momentum ($L$) couples with the total spin angular momentum ($S$) to give total angular momentum ($J$):
+\[
+J = (L+S),\ (L+S-1),\ \ldots,\ |L-S|
+\]
+
+\textbf{Rule:}
+\begin{itemize}
+  \item For \textbf{less than half-filled} orbitals: use the \textbf{minimum} value of $J$.
+  \item For \textbf{more than half-filled} orbitals: use the \textbf{maximum} value of $J$.
+\end{itemize}
+
+\textbf{Example:} For $\mathrm{P}^2$, $S=1$, $L=1$:
+\[
+J = (1+1), \ldots, (1-1) = 2, 1, 0
+\]
+Since $\mathrm{P}^2$ is less than half-filled, $J=0$.
+
+%----------------------------------------------------------------------
+\subsection{Worked Examples}
+%----------------------------------------------------------------------
+
+\subsubsection{Ground State Term for $\mathrm{P}^3$ Configuration}
+
+Electron arrangement ($m_\ell = +1, 0, -1$, one electron each):
+\[
+L = 1(+1) + 1(0) + 1(-1) = 0 \Rightarrow S\text{ term}
+\]
+\[
+S = \tfrac{1}{2}+\tfrac{1}{2}+\tfrac{1}{2} = \tfrac{3}{2}, \quad 2S+1 = 4
+\]
+\[
+J = \left|0+\tfrac{3}{2}\right| \text{ to } \left|0-\tfrac{3}{2}\right| = \tfrac{3}{2}
+\]
+\[
+\boxed{\text{Ground state term}: {}^4S_{3/2}}
+\]
+
+\subsubsection{Ground State Term for $\mathrm{d}^2$ Configuration}
+
+Electron arrangement (two electrons at $m_\ell = +2, +1$):
+\[
+L = 1(+2)+1(+1) = 3 \Rightarrow F\text{ term}
+\]
+\[
+S = \tfrac{1}{2}+\tfrac{1}{2} = 1, \quad 2S+1 = 3
+\]
+\[
+J = (3+1) \text{ to } (3-1) = 4, 3, 2
+\]
+Less than half-filled $\Rightarrow$ minimum $J = 2$.
+\[
+\boxed{\text{Ground state term}: {}^3F_2}
+\]
+
+\subsubsection{Ground State Term for $^7\mathrm{N}$}
+
+Configuration: $1s^2\,2s^2\,2p_x^1\,2p_y^1\,2p_z^1$
+\[
+L = 2(0)+1(+1)+1(0)+1(-1) = 0 \Rightarrow S\text{ term}
+\]
+\[
+S = -\tfrac{1}{2}+\tfrac{1}{2}+\tfrac{1}{2}+\tfrac{1}{2} = \tfrac{3}{2}, \quad 2S+1 = 4
+\]
+\[
+J = \left|0+\tfrac{3}{2}\right| \text{ to } \left|0-\tfrac{3}{2}\right| = \tfrac{3}{2}
+\]
+\[
+\boxed{{}^4S_{3/2} \text{ (quartet S three-halves)}}
+\]
+
+\subsubsection{Ground State Term for $^{26}\mathrm{Fe}$}
+
+Configuration: $[\mathrm{Ar}]\,3d^6\,4s^2$; considering 3d$^6$: ($m_\ell = +2,+1,0,-1,-2$, filled as $\uparrow\downarrow,\uparrow,\uparrow,\uparrow,\uparrow$)
+\[
+L = 2(+2)+1(+1)+1(0)+1(-1)+1(-2)+0 = 2 \Rightarrow D\text{ term}
+\]
+\[
+S = 0+\tfrac{1}{2}+\tfrac{1}{2}+\tfrac{1}{2}+\tfrac{1}{2}+0 = 2, \quad 2S+1 = 5
+\]
+\[
+J = |2+2| \text{ to } |2-2| = 4, 3, 2, 1, 0
+\]
+More than half-filled $\Rightarrow$ maximum $J = 4$.
+\[
+\boxed{{}^5D_4 \text{ (quintet D four)}}
+\]
+
+\subsubsection{Ground State Term for $\mathrm{d}^9$ Configuration}
+
+3d$^9$: ($\uparrow\downarrow,\uparrow\downarrow,\uparrow\downarrow,\uparrow\downarrow,\uparrow$; $m_\ell = +2,+1,0,-1,-2$)
+\[
+L = 2(+2)+2(+1)+2(0)+2(-1)+1(-2) = 2 \Rightarrow D\text{ term}
+\]
+\[
+S = \tfrac{1}{2}, \quad 2S+1 = 2
+\]
+\[
+J = \left(2+\tfrac{1}{2}\right) \text{ to } \left(2-\tfrac{1}{2}\right) = \tfrac{5}{2},\ \tfrac{3}{2}
+\]
+More than half-filled $\Rightarrow$ maximum $J = \tfrac{5}{2}$.
+\[
+\boxed{{}^2D_{5/2}}
+\]
+
+\subsubsection{Finding $L$, $S$ and $J$ from a Given Term Symbol}
+
+\textbf{For ${}^3F$:}
+\[
+2S+1 = 3 \Rightarrow S = 1 \text{ (2 unpaired electrons)}; \quad L = 3 \text{ (F term)}
+\]
+\[
+J = (3+1),(3+0),(3-1) = 4, 3, 2
+\]
+
+\textbf{For ${}^1S$:}
+\[
+2S+1 = 1 \Rightarrow S = 0 \text{ (0 unpaired electrons)}; \quad L = 0 \text{ (S term)}
+\]
+\[
+J = (0+0) = 0
+\]
+
+%----------------------------------------------------------------------
+\section{Term Symbols for $\mathrm{p}^2$ Configuration (Carbon)}
+%----------------------------------------------------------------------
+
+The electronic configuration of C is $1s^2\,2s^2\,2p^2$. Since the $1s$ and $2s$ orbitals are fully filled, only the two $2p$ electrons contribute to the term symbols.
+
+Three cases arise:
+
+\subsection*{Figure 1: Electrons with Parallel Spins}
+\begin{itemize}
+  \item[(a)] $L = +1$, $S = 1$, $2S+1 = 3$
+  \item[(b)] $L = 0$, $S = 1$, $2S+1 = 3$
+  \item[(c)] $L = -1$, $S = 1$, $2S+1 = 3$
+\end{itemize}
+$L$ values $+1, 0, -1$ correspond to $L=1$ (P term). All arrangements give $2S+1=3$, hence: ${}^3P$
+
+\subsection*{Figure 2 \& 3: Electrons with Opposite Spins}
+\begin{itemize}
+  \item Group (a): $L$ values $+2,+1,0,-1,-2$ $\Rightarrow$ $L=2$ (D term), $S=0$: ${}^1D$
+  \item Group (b): $L = 0$ $\Rightarrow$ $L=0$ (S term), $S=0$: ${}^1S$
+\end{itemize}
+
+\textbf{Summary:} The terms for $\mathrm{p}^2$ are ${}^3P$, ${}^1D$, and ${}^1S$.
+
+\subsection{Energy Ordering by Hund's Rule}
+
+\begin{enumerate}
+  \item The term with the \textbf{highest spin multiplicity} ($2S+1$) is most stable (lowest energy). ${}^3P$ has $2S+1 = 3$, so it is most stable.
+  \item Among terms with the same $2S+1$, the one with \textbf{higher $L$} is more stable. ${}^1D$ ($L=2$) is more stable than ${}^1S$ ($L=0$).
+\end{enumerate}
+
+\[
+{}^3P < {}^1D < {}^1S \quad \text{(increasing energy)}
+\]
+
+\subsection{J Energy Levels for $\mathrm{p}^2$}
+
+\textbf{For ${}^3P$} ($L=1$, $S=1$):
+\[
+J = 2, 1, 0 \Rightarrow {}^3P_2,\ {}^3P_1,\ {}^3P_0
+\]
+
+\textbf{For ${}^1D$} ($L=2$, $S=0$):
+\[
+J = 2 \Rightarrow {}^1D_2
+\]
+
+\textbf{For ${}^1S$} ($L=0$, $S=0$):
+\[
+J = 0 \Rightarrow {}^1S_0
+\]
+
+Increasing order of energy:
+\[
+{}^3P_0 < {}^3P_1 < {}^3P_2 < {}^1D_2 < {}^1S_0
+\]
+
+Ground state Russell--Saunders term: ${}^3P_0$.
+
+%----------------------------------------------------------------------
+\section{Microstates}
+%----------------------------------------------------------------------
+
+In a given configuration, electrons can be arranged in many different ways that have slightly different energy. These different arrangements are called \textbf{microstates}.
+
+\subsection{(1) Microstates from a Single Sub-shell}
+
+\[
+\text{Number of microstates} = \frac{n!}{r!\,(n-r)!}
+\]
+
+where $n = 2 \times (\text{number of orbitals in subshell})$ and $r = $ number of electrons.
+
+\textbf{Example -- $\mathrm{p}^2$:} $r=2$, $n = 2\times3 = 6$
+\[
+\frac{6!}{2!\,4!} = 15
+\]
+
+\textbf{Example -- $\mathrm{d}^1$:} $r=1$, $n=2\times5=10$
+\[
+\frac{10!}{1!\,9!} = 10
+\]
+
+\begin{table}[H]
+\centering
+\caption{Number of Microstates for $p$, $d$, and $f$ Sub-shells}
+\begin{tabular}{ccc}
+\toprule
+$P^n$ Config & $d^n$ Config & $f^n$ Config \\
+\midrule
+$P^1 = 6$  & $d^1 = 10$  & $f^1 = 14$ \\
+$P^2 = 15$ & $d^2 = 45$  & $f^2 = 91$ \\
+$P^3 = 20$ & $d^3 = 120$ & $f^3 = 364$ \\
+$P^4 = 15$ & $d^4 = 210$ & $f^4 = 1001$ \\
+$P^5 = 6$  & $d^5 = 252$ & $f^5 = 3003$ \\
+$P^6 = 1$  & $d^6 = 210$ & $f^6 = 3432$ \\
+           & $d^7 = 120$ & $f^7 = 3003$ \\
+           & $d^8 = 45$  & $f^8 = 3003$ \\
+           & $d^9 = 10$  & $f^9 = 2002$ \\
+           & $d^{10} = 1$ & $f^{10} = 1001$ \\
+           &             & $f^{11} = 364$ \\
+           &             & $f^{12} = 91$ \\
+           &             & $f^{13} = 14$ \\
+           &             & $f^{14} = 1$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{(2) Microstates from Two Different Sub-shells}
+
+Multiply the microstates of each sub-shell.
+
+\textbf{Example -- $\mathrm{p}^1\mathrm{d}^1$:}
+\[
+\text{For } p^1\text{: } n=6,\ r=1 \Rightarrow 6; \quad \text{For } d^1\text{: } n=10,\ r=1 \Rightarrow 10
+\]
+\[
+\text{Total microstates} = 6 \times 10 = 60
+\]
+
+\subsection{(3) Microstates from Term Symbol (without J)}
+
+\[
+\text{Microstates} = (2S+1)(2L+1)
+\]
+
+\textbf{Example -- ${}^2D$:} $2S+1=2$, $L=2$
+\[
+(2)(2\times2+1) = 2 \times 5 = 10
+\]
+
+\textbf{Microstates for $\mathrm{p}^2$ configuration:}
+\begin{align*}
+{}^3P: &\quad (3)(2\times1+1) = 3\times3 = 9 \\
+{}^1D: &\quad (1)(2\times2+1) = 1\times5 = 5 \\
+{}^1S: &\quad (1)(2\times0+1) = 1\times1 = 1 \\
+\text{Total} &= 9+5+1 = 15 \checkmark
+\end{align*}
+
+\subsection{Pigeonhole Diagram for $\mathrm{p}^2$}
+
+Total microstates of $\mathrm{p}^2 = 15$, grouped as:
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{c|ccccc|ccc|ccc|ccc|c}
+\toprule
+$m_\ell$ & a & b & c & d & e & f & g & h & i & j & k & l & m & n & o \\
+\midrule
+$-1$ & & & $\downarrow$ & $\downarrow$ & $\uparrow\downarrow$ &  & $\uparrow$ & $\uparrow$ &  & $\uparrow$ & $\uparrow$ & & $\downarrow$ & $\downarrow$ & \\
+$0$ & & $\downarrow$ &  & $\uparrow$ &  & $\uparrow$ &  & $\uparrow$ & $\uparrow$ &  & $\downarrow$ & $\downarrow$ &  & $\downarrow$ & $\uparrow\downarrow$ \\
+$+1$ & $\uparrow\downarrow$ & $\uparrow$ & $\uparrow$ &  & & $\uparrow$ & $\uparrow$ &  & $\downarrow$ & $\downarrow$ &  & $\downarrow$ & $\downarrow$ &  & \\
+\midrule
+$M_L$ & $+2$ & $+1$ & $0$ & $-1$ & $-2$ & $+1$ & $0$ & $-1$ & $+1$ & $0$ & $-1$ & $+1$ & $0$ & $-1$ & $0$ \\
+$M_S$ & $0$ & $0$ & $0$ & $0$ & $0$ & $+1$ & $+1$ & $+1$ & $0$ & $0$ & $0$ & $-1$ & $-1$ & $-1$ & $0$ \\
+$M_J$ & $+2$ & $+1$ & 0 & $-1$ & $-2$ & $+2$ & $+1$ & $0$ & $+1$ & $0$ & $-1$ & $0$ & $-1$ & $-2$ & $0$ \\
+\midrule
+& & & (A) &  & & \multicolumn{8}{c}{(B)} & & (C) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{itemize}
+  \item \textbf{Group A} ($M_L = +2,+1,0,-1,-2$): $L=2$ (D), $S=0$, $J=2$ $\Rightarrow$ five ${}^1D_2$
+  \item \textbf{Group B} ($M_L = +1,0,-1$, $M_S=+1$): $L=1$ (P), $S=1$, $J=2,1,0$ $\Rightarrow$ ${}^3P_2$, ${}^3P_1$, ${}^3P_0$
+  \item \textbf{Group C} ($M_L=0$): $L=0$ (S), $S=0$, $J=0$ $\Rightarrow$ ${}^1S_0$
+\end{itemize}
+
+\subsection{Microstates for $\mathrm{d}^2$ Configuration}
+
+$n = 10$, $r = 2$:
+\[
+\frac{10!}{2!\,8!} = 45
+\]
+
+Term symbols for $\mathrm{d}^2$: ${}^3F$, ${}^3P$, ${}^1G$, ${}^1D$, ${}^1S$
+
+\begin{align*}
+{}^3F: &\quad 3(2\times3+1) = 3\times7 = 21 \\
+{}^3P: &\quad 3(2\times1+1) = 3\times3 = 9 \\
+{}^1G: &\quad 1(2\times4+1) = 1\times9 = 9 \\
+{}^1D: &\quad 1(2\times2+1) = 1\times5 = 5 \\
+{}^1S: &\quad 1(2\times0+1) = 1\times1 = 1 \\
+\text{Total} &= 21+9+9+5+1 = 45 \checkmark
+\end{align*}
+
+Ground state term symbols for $\mathrm{d}^2$ by Hund's rule:
+\[
+{}^3F_2 < {}^3F_3 < {}^3F_4 < {}^3P_0 < {}^3P_1 < {}^3P_2 < {}^1G_4 < {}^1D_2 < {}^1S_0
+\]
+
+\subsection{(4) Microstates from Term Symbol with J}
+
+\[
+\text{Microstates} = (2J+1)
+\]
+
+\textbf{Example -- ${}^2P_4$:} $J=4$
+\[
+(2\times4+1) = 9
+\]
+
+%----------------------------------------------------------------------
+\section{Electronic Spectra of Transition Metal Complexes}
+%----------------------------------------------------------------------
+
+When electrons are promoted from one energy level to another, spectra arise. These are high-energy transitions. Much lower energy vibrational and rotational transitions always occur simultaneously, resulting in considerable broadening of electronic absorption bands. Band widths are commonly $1000$--$3000\ \mathrm{cm}^{-1}$.
+
+Not all theoretically possible electronic transitions are observed. Selection rules distinguish between `allowed' and `forbidden' transitions.
+
+\subsection{Selection Rules}
+
+\subsubsection{(1) Spin Selection Rule}
+
+During a transition, the total spin of the molecule (atom or ion) must remain constant.
+\[
+\Delta S = 0 \Rightarrow \text{allowed}; \quad \Delta S \neq 0 \Rightarrow \text{forbidden}
+\]
+
+Allowed: singlet$\to$singlet, doublet$\to$doublet, triplet$\to$triplet.\\
+Forbidden: singlet$\to$doublet, doublet$\to$triplet, etc.
+
+\subsubsection{(2) Laporte Orbital Selection Rule}
+
+\[
+\Delta\ell = \pm1 \Rightarrow \text{allowed (sharp band)}; \quad \Delta\ell \neq \pm1 \Rightarrow \text{forbidden}
+\]
+
+Allowed: s$\to$p, p$\to$s, p$\to$d, d$\to$p, d$\to$f, f$\to$d.
+
+In terms of symmetry: $g \to u$ and $u \to g$ are allowed; $g \to g$ and $u \to u$ are forbidden.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{ccc}
+\toprule
+Orbital & $\ell$ & Symmetry \\
+\midrule
+s & 0 & gerade \\
+p & 1 & ungerade \\
+d & 2 & gerade \\
+f & 3 & ungerade \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Intensity of Electronic Transitions}
+
+\begin{table}[H]
+\centering
+\caption{Approximate Molar Absorption Constants ($\varepsilon$)}
+\begin{tabular}{lc}
+\toprule
+\textbf{Type of Transition} & \textbf{Approx.\ $\varepsilon$ (L mol$^{-1}$ cm$^{-1}$)} \\
+\midrule
+Spin forbidden, Laporte forbidden & $10^{-2}$ to $1.0$ \\
+Spin allowed, Laporte forbidden & $1$ to $10$ \\
+Spin allowed, Laporte forbidden (p \& d orbital overlap) & $10$ to $10^2$ \\
+Spin allowed, Laporte forbidden (intensity stealing) & $10^2$ to $10^3$ \\
+Spin allowed, Laporte allowed & $10^4$ to $10^5$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Splitting of $\mathrm{d}^n$ Terms}
+
+Each free ion term is affected by ligands in a complex. The effect depends on the geometry of the complex.
+
+\begin{itemize}
+  \item s-orbitals: spherically symmetrical, unaffected.
+  \item p-orbitals: all three affected equally, no splitting.
+  \item d-orbitals: split into two states in octahedral/tetrahedral fields.
+  \item f-orbitals: split into three states.
+\end{itemize}
+
+\subsection{Transformation of Spectroscopic Terms to Mulliken Symbols}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{ccc}
+\toprule
+\textbf{Spectroscopic Term} & \textbf{Octahedral Field} & \textbf{Tetrahedral Field} \\
+\midrule
+S & $A_{2g}$ & $A_1$ \\
+P & $T_{1g}$ & $T_1$ \\
+D & $E_g + T_{2g}$ & $E + T_2$ \\
+F & $A_{2g} + T_{1g} + T_{2g}$ & $A_2 + T_1 + T_2$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%----------------------------------------------------------------------
+\section{Electronic Spectra of Specific Systems}
+%----------------------------------------------------------------------
+
+\subsection{$\mathrm{d}^1$ System}
+
+In the free gaseous metal ion, five $d$ orbitals are degenerate and no $d$--$d$ transitions occur.
+
+In octahedral complexes of Ti(III) (d$^1$ system) such as $[\mathrm{TiCl}_6]^{3-}$ and $[\mathrm{Ti(H_2O)_6}]^{3+}$, the $d$ orbitals split and the one electron occupies the lower $t_{2g}$ level. The only possible transition is to the $e_g$ level.
+
+Absorption spectrum of $[\mathrm{Ti(H_2O)_6}]^{2+}$ shows one band with peak at $20300\ \mathrm{cm}^{-1}$.
+
+Peaks for various Ti(III) complexes:
+\begin{itemize}
+  \item $[\mathrm{TiCl_6}]^{3-}$: $13000\ \mathrm{cm}^{-1}$
+  \item $[\mathrm{TiF_6}]^{3-}$: $18900\ \mathrm{cm}^{-1}$
+  \item $[\mathrm{Ti(H_2O)_6}]^{2+}$: $20300\ \mathrm{cm}^{-1}$
+  \item $[\mathrm{Ti(CN)_6}]^{3-}$: $22300\ \mathrm{cm}^{-1}$
+\end{itemize}
+
+\subsection{$\mathrm{d}^9$ System}
+
+$\mathrm{Cu}^{2+}$ ($Z=29$): $[\mathrm{Ar}]\,3d^9\,4s^0$, term symbol ${}^2D$.
+
+In $[\mathrm{Cu(H_2O)_6}]^{2+}$, the octahedral field splits $d$ orbitals into lower ${}^2t_{2g}$ ($d_{xy},d_{yz},d_{xz}$) and higher ${}^2e_g$ ($d_{x^2-y^2},d_{z^2}$).
+
+According to CFT, only one transition ${}^2T_{2g} \to {}^2E_g$ should be observed (one band). However, the spectrum of $[\mathrm{Cu(H_2O)_6}]^{2+}$ shows two broad, asymmetric bands. This is explained by the \textbf{Jahn--Teller effect}.
+
+According to Jahn--Teller theory, a non-linear molecule containing degenerate orbitals in its ground state is distorted, destroying the degeneracy. Thus, $[\mathrm{Cu(H_2O)_6}]^{2+}$ loses its symmetry and the energy levels split further, giving three transitions:
+\begin{enumerate}
+  \item ${}^2B_{1g} \to {}^2E_g$
+  \item ${}^2A_{1g} \leftarrow {}^2E_g$
+  \item ${}^2B_{2g} \leftarrow {}^2E_g$
+\end{enumerate}
+
+The ${}^2B_{2g} \leftarrow {}^2E_g$ transition is very low energy (near IR), so only two bands are observed in the visible region. These two bands appear close together as a broad peak with a shoulder. The result is that $[\mathrm{Cu(H_2O)_6}]^{2+}$ appears blue-green in colour.
+
+\subsection{Correlation Diagrams}
+
+\subsubsection{$\mathrm{d}^1$ Correlation Diagram}
+
+Ground term: ${}^2D$. Ground state configuration: $t_{2g}^1 e_g^0$; excited state: $t_{2g}^0 e_g^1$.
+Transition: ${}^2T_{2g} \to {}^2E_g$, with energy equal to $\Delta_o$.
+
+Relative to the ${}^2D$ free ion:
+\[
+{}^2T_{2g} \text{ stabilised by } {-0.4\Delta_o}; \quad {}^2E_g \text{ destabilised by } {+0.6\Delta_o}
+\]
+
+\subsubsection{$\mathrm{d}^9$ Correlation Diagram}
+
+Ground term also ${}^2D$. Ground state: $t_{2g}^6 e_g^3$ (hole in $e_g$). Excited state: $t_{2g}^5 e_g^4$ (hole in $t_{2g}$). The energy ordering is reversed relative to $d^1$:
+\[
+{}^2E_g \text{ stabilised by } {-0.4\Delta_o}; \quad {}^2T_{2g} \text{ destabilised by } {+0.6\Delta_o}
+\]
+
+\subsection{Orgel Diagram of $\mathrm{d}^1$ -- $\mathrm{d}^9$}
+
+Both $d^1$ and $d^9$ have ground state term ${}^2D$. In $d^1$ the electron transitions; in $d^9$ the positron (hole) transitions. Absorption bands of both $d^1$ and $d^9$ occur at equal frequencies.
+
+In a tetrahedral field, the energy level diagram for $d^1$ complexes is the inverse of that in an octahedral field and similar to $d^9$.
+
+\subsection{$\mathrm{d}^2$ Correlation Diagram}
+
+V(III) octahedral complexes have the $d^2$ configuration. Ground state term: ${}^3F$. Excited states: ${}^3P$, ${}^1G$, ${}^1D$, ${}^1S$.
+
+By the spin selection rule, ${}^3F \to {}^3P$ is allowed; ${}^1G$, ${}^1D$, ${}^1S$ are forbidden.
+
+Three absorption bands arise from:
+\begin{enumerate}
+  \item ${}^3T_{1g}(F) \to {}^3T_{2g}(F)$: $17200\ \mathrm{cm}^{-1}$
+  \item ${}^3T_{1g}(F) \to {}^3T_{1g}(P)$: $\}$ $25600\ \mathrm{cm}^{-1}$
+  \item ${}^3T_{1g}(F) \to {}^3A_{2g}(F)$: $\}$
+\end{enumerate}
+
+Because the energy difference between transitions (ii) and (iii) is very small, they overlap to give a single peak. Only two peaks appear in the spectrum of $[\mathrm{V(H_2O)_6}]^{3+}$.
+
+\subsection{$\mathrm{d}^8$ Correlation Diagram}
+
+Ni(II) octahedral complexes have the $d^8$ configuration. Ground state term: ${}^3F$. Excited states: ${}^3P$, ${}^1G$, ${}^1D$, ${}^1S$.
+
+In octahedral field, the ${}^3F$ term splits into lower energy ${}^3A_{2g}$ and higher energy ${}^3T_{2g}$ and ${}^3T_{1g}(P)$ levels.
+
+Three transitions in $[\mathrm{Ni(H_2O)_6}]^{2+}$:
+\begin{enumerate}
+  \item ${}^3A_{2g} \to {}^3T_{2g}(F)$: $8700\ \mathrm{cm}^{-1}$
+  \item ${}^3A_{2g} \to {}^3T_{1g}(F)$: $14500\ \mathrm{cm}^{-1}$
+  \item ${}^3A_{2g} \to {}^3T_{1g}(P)$: $25300\ \mathrm{cm}^{-1}$
+\end{enumerate}
+
+All three transitions are energetically sufficient, so the visible spectrum of $[\mathrm{Ni(H_2O)_6}]^{2+}$ contains three peaks.
+
+\subsection{$\mathrm{d}^2$--$\mathrm{d}^8$ Orgel Diagram}
+
+Both $d^2$ and $d^8$ have ground state term ${}^3F$ and excited states ${}^3P$, ${}^1D$, ${}^1S$.
+
+The splitting of $d^2$ in octahedral field equals that of $d^8$ in tetrahedral field. The splitting of $d^2$ in tetrahedral field equals that of $d^8$ in octahedral field.
+
+\subsection{Electronic Spectra of High-Spin $\mathrm{d}^5$ Ions}
+
+For high-spin $d^5$ ions, all possible $d$--$d$ transitions are spin-forbidden, since any transition must involve a reversal of spin. As a result, bands in the spectra of high-spin Mn(III) and Fe(III) complexes are very weak and the compounds are nearly colourless.
+
+The four quartets ${}^4G$, ${}^4F$, ${}^4D$, ${}^4P$ involve the reversal of only one spin; the other seven states are doublets and doubly spin-forbidden. Up to ten extremely weak absorption bands may be observed in an octahedral field.
+
+\subsection{$\mathrm{d}^3$--$\mathrm{d}^7$ Orgel Diagram}
+
+Cr(III) octahedral complexes have $d^3$; Co(III) octahedral complexes have $d^7$. Ground state term: ${}^4F$; excited states: ${}^4P$, ${}^2G$, ${}^2F$, ${}^2D$, ${}^2P$.
+
+By spin multiplicity rule, ${}^4F \to {}^4P$ is allowed; ${}^2G$, ${}^2F$, ${}^2D$, ${}^2P$ are forbidden.
+
+\textbf{$[\mathrm{Co(H_2O)_6}]^{2+}$} shows three absorption bands:
+\begin{enumerate}
+  \item ${}^4T_{1g}(F) \to {}^4T_{2g}(F)$: $8000\ \mathrm{cm}^{-1}$
+  \item ${}^4T_{1g}(F) \to {}^4A_{2g}(F)$: $19600\ \mathrm{cm}^{-1}$
+  \item ${}^4T_{1g}(F) \to {}^4T_{1g}(P)$: $21600\ \mathrm{cm}^{-1}$
+\end{enumerate}
+
+\textbf{Tetrahedral $[\mathrm{CoCl_4}]^{2-}$} shows intense blue colour. Possible transitions:
+\begin{enumerate}
+  \item ${}^4A_2(F) \to {}^4T_1(P)$: $15000\ \mathrm{cm}^{-1}$
+  \item ${}^4A_2(F) \to {}^4T_1(F)$: $5800\ \mathrm{cm}^{-1}$
+  \item ${}^4A_2(F) \to {}^4T_2(F)$: $3500\ \mathrm{cm}^{-1}$
+\end{enumerate}
+
+Dissolving $\mathrm{CoCl}_2$ in water produces a pale pink solution of $[\mathrm{Co(H_2O)_6}]^{2+}$, whereas in alcohol the tetrahedral $[\mathrm{CoCl_2(CH_3CH_2OH)_2}]$ forms with intense blue colour.
+
+The tetrahedral complex $[\mathrm{CoCl_4}]^{2-}$ shows much more intense $d$--$d$ bands than the octahedral $[\mathrm{Co(H_2O)_6}]^{2+}$ because the tetrahedral complex has no centre of symmetry, helping to overcome the $g \to g$ Laporte selection rule.
+
+\subsection{Orgel Diagram of $\mathrm{d}^4$--$\mathrm{d}^6$}
+
+Ground state term for both $d^4$ and $d^6$ is ${}^5D$. Excited states: ${}^3h$, ${}^3G$, ${}^3F$, ${}^3D$, ${}^3P$, ${}^1I$, ${}^1D$, ${}^1S$.
+
+Only the ${}^5D$ transition is spin-allowed. The ${}^5D$ term splits into $T_{2g}$ and $E_g$.
+\begin{itemize}
+  \item High-spin $d^6$: electron promoted $T_{2g} \to E_g$ (same as $d^1$).
+  \item $d^4$: positron (hole) promoted $E_g \to T_{2g}$ (same as $d^9$).
+\end{itemize}
+
+In a tetrahedral field, the subscript $g$ is omitted from the Orgel diagram.
+
+The combined Orgel diagram for $d^1$, $d^9$, $d^4$, $d^6$ systems shows analogous splitting patterns.
+
+%----------------------------------------------------------------------
+\section{Jahn--Teller Effect}
+%----------------------------------------------------------------------
+
+The Jahn--Teller theorem explains why certain six-coordinate complexes possess distorted octahedral geometry.
+
+\begin{enumerate}
+  \item An octahedral complex has a regular shape when both $t_{2g}$ and $e_g$ sets of $d$-orbitals are symmetrically occupied.
+  \item When the $t_{2g}$ orbitals are asymmetrically occupied, \textbf{slight distortion} occurs. This happens when the central metal ion contains $1$, $2$, $4$, or $5$ electrons in $t_{2g}$.
+  \item When the $e_g$ orbitals are asymmetrically filled, \textbf{strong distortion} occurs, potentially changing the octahedral shape to tetragonal or even square planar. High-spin $d^4$ and $d^9$, and low-spin $d^7$, $d^8$, $d^9$ configurations lead to strong distortion.
+\end{enumerate}
+
+\subsection{Explanation for $\mathrm{Cu}^{2+}$ ($\mathrm{d}^9$)}
+
+Configuration: $t_{2g}^6 e_g^3$. Two possible arrangements:
+\begin{enumerate}
+  \item $t_{2g}^6\ (d_{z^2})^2\ (d_{x^2-y^2})^1$
+  \item $t_{2g}^6\ (d_{z^2})^1\ (d_{x^2-y^2})^2$
+\end{enumerate}
+
+Due to unsymmetrical $e_g$ occupation, ligands along the $z$-axis move away from the nucleus, while ligands in the $x$-$y$ plane move closer. Thus, $\mathrm{Cu}^{2+}$ complexes have \textbf{four short and two long} metal--ligand bonds.
+
+Examples:
+\begin{itemize}
+  \item Cupric chloride crystal: four $\mathrm{Cl}^-$ at $2.30$~\AA, two $\mathrm{Cl}^-$ at $2.95$~\AA.
+  \item Cupric fluoride crystal: four $\mathrm{F}^-$ at $1.93$~\AA, two $\mathrm{F}^-$ at $2.27$~\AA.
+\end{itemize}
+
+In the Jahn--Teller splitting: $\Delta_o \gg \delta_1 > \delta_2$.
+
+%----------------------------------------------------------------------
+\section{Spectrochemical Series}
+%----------------------------------------------------------------------
+
+The relative strength of different ligands can be determined by examining the electronic spectra of their complexes. When a stronger ligand replaces a weaker one, the absorption band shifts to \textbf{shorter wavelength} (blue shift, higher energy). A weaker ligand causes a \textbf{red shift} (longer wavelength, lower energy).
+
+The spectrochemical series, in order of increasing ligand strength, is:
+
+\[
+I^- < Br^- < Cl^- < F^- < \text{O-donors} < H_2O < NH_3 < \text{N-donors} < CN^- \approx CO
+\]
+
+%----------------------------------------------------------------------
+\section{Assignment}
+%----------------------------------------------------------------------
+
+\subsection*{Short Questions}
+
+\begin{enumerate}
+  \item Define term symbol.
+  \item Give the value of $L$ for $s$, $p$, $d$, $f$, and $g$.
+  \item What is spin multiplicity?
+  \item Give Pauli's Exclusion Principle and Hund's Rule.
+  \item Define: Total degeneracy.
+  \item Write the rules for the ground state term symbol.
+  \item Find the ground state term symbol for $^7\mathrm{N}$ ($Z=7$), $^6\mathrm{C}$ ($Z=6$), $\mathrm{V}^{3+}$ ($Z=23$), $\mathrm{Mn}^{2+}$ ($Z=25$), $\mathrm{Ni}^{2+}$ ($Z=28$), $\mathrm{Cu}^{2+}$ ($Z=29$).
+  \item Find $L$, $S$, spin multiplicity, number of unpaired electrons and $J$ values of ${}^3F$, ${}^1S$, ${}^5D$.
+  \item Calculate microstates for $p^3$ and $d^2$.
+  \item Explain: Bands of $d$--$d$ transition are weaker.
+  \item Explain: Identification of octahedral and tetrahedral complexes through electronic spectra.
+  \item According to the Laporte rule, transition metal complexes should be colourless, but this is not true. Explain.
+  \item Complexes of $\mathrm{Zn}^{2+}$ are mostly colourless. Explain.
+  \item Explain: The electronic absorption band of \textit{cis}-$\mathrm{MA_4B_2}$ is more intense than \textit{trans}-$\mathrm{MA_4B_2}$.
+\end{enumerate}
+
+\subsection*{Long Questions}
+
+\begin{enumerate}
+  \item Explain the R--S (L--S) coupling scheme to derive the ground state term symbol.
+  \item What is L--S coupling? Explain with the example of the $p^2$ configuration of carbon.
+  \item Derive the ground state term symbol for: (i) $^7\mathrm{N}$, (ii) $^{16}\mathrm{S}$, (iii) $^{22}\mathrm{Ti}$, (iv) $\mathrm{Cr}^{3+}$ ($Z=24$), (v) $\mathrm{Fe}^{3+}$ ($Z=26$), (vi) $\mathrm{Cu}^{2+}$ ($Z=29$), (vii) $\mathrm{Co}^{2+}$ ($Z=27$), (viii) $\mathrm{Ni}^{2+}$ ($Z=28$).
+  \item Identify the ground state term (giving reason) for: (i) ${}^1S$, (ii) ${}^3F$, (iii) ${}^3P$, (iv) ${}^1G$, (v) ${}^1D$.
+  \item Calculate $L$ for $p^2$ configuration and show the energy states.
+  \item Draw the pigeonhole diagram for $p^2$ configuration and arrange terms according to energy level.
+  \item Draw the pigeonhole diagram for $d^2$ configuration and arrange terms according to energy level.
+  \item Discuss the Selection Rules for electronic transition.
+  \item Explain the Jahn--Teller effect in $[\mathrm{Ti(H_2O)_6}]^{3+}$.
+  \item Discuss the electronic spectra of $[\mathrm{Ti(H_2O)_6}]^{3+}$ complex ion.
+  \item Explain the Jahn--Teller effect in $[\mathrm{Cu(H_2O)_6}]^{2+}$.
+  \item Explain: Orgel energy diagrams of $d^1$ and $d^9$ are opposite to each other.
+  \item Write a short note on hole formalism.
+  \item In $[\mathrm{V(H_2O)_6}]^{3+}$, three transitions are possible but only two peaks are observed. Explain.
+  \item In $[\mathrm{Ni(H_2O)_6}]^{2+}$, three peaks are observed. Explain.
+  \item Draw and explain the combined Orgel diagram of $d^3$ and $d^7$.
+\end{enumerate}
+
+\end{document}
+=======
+\documentclass[12pt]{article}
+
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{setspace}
+\usepackage{enumitem}
+
+\title{\textbf{Preparation of 0.1 M Acetate Buffer (pH 5.0)}}
+\author{}
+\date{}
+
+\begin{document}
+	
+	\maketitle
+	
+	\section*{Aim}
+	
+	To prepare 100 mL of 0.1 M acetate buffer of pH 5.0 using 0.1 M sodium acetate and 0.1 M acetic acid solutions.
+	
+	\section*{Required Solutions}
+	
+	\begin{itemize}
+		\item 0.1 M Acetic acid solution (\(\mathrm{CH_3COOH}\))
+		\item 0.1 M Sodium acetate solution (\(\mathrm{CH_3COONa}\))
+		\item Distilled water (\(\mathrm{H_2O}\))
+	\end{itemize}
+	
+	\section*{Apparatus}
+	
+	\begin{itemize}
+		\item 100 mL volumetric flask
+		\item Pipettes or measuring cylinders
+		\item Beaker
+		\item Glass rod
+		\item pH meter
+	\end{itemize}
+	
+	\section*{Theory}
+	
+	An acetate buffer consists of a weak acid (acetic acid, \(\mathrm{CH_3COOH}\)) and its conjugate base (sodium acetate, \(\mathrm{CH_3COONa}\)). It resists changes in pH when small amounts of acid or base are added. The pH of the buffer is governed by the Henderson--Hasselbalch equation:
+	
+	\[
+	\mathrm{pH}=\mathrm{p}K_a+\log\left(\frac{[\mathrm{CH_3COO^-}]}{[\mathrm{CH_3COOH}]}\right)
+	\]
+	
+	For acetic acid,
+	
+	\[
+	\mathrm{p}K_a=4.76
+	\]
+	
+	For a buffer of pH 5.0,
+	
+	\[
+	5.0=4.76+\log\left(\frac{[\mathrm{CH_3COO^-}]}{[\mathrm{CH_3COOH}]}\right)
+	\]
+	
+	Therefore,
+	
+	\[
+	\frac{[\mathrm{CH_3COO^-}]}{[\mathrm{CH_3COOH}]}
+	=10^{(5.0-4.76)}
+	=10^{0.24}
+	\approx1.74
+	\]
+	
+	Since both stock solutions have the same concentration (0.1 M), the concentration ratio is equal to the volume ratio.
+	
+	Thus,
+	
+	\[
+	\frac{V_{\mathrm{CH_3COONa}}}
+	{V_{\mathrm{CH_3COOH}}}
+	=1.74
+	\]
+	
+	For a total volume of 100 mL,
+	
+	\[
+	V_{\mathrm{CH_3COONa}}
+	=
+	\frac{1.74}{1+1.74}\times100
+	=
+	63.5~\mathrm{mL}
+	\]
+	
+	\[
+	V_{\mathrm{CH_3COOH}}
+	=
+	\frac{1}{1+1.74}\times100
+	=
+	36.5~\mathrm{mL}
+	\]
+	
+	Hence, mixing 63.5 mL of 0.1 M sodium acetate with 36.5 mL of 0.1 M acetic acid produces a 0.1 M acetate buffer of pH 5.0.
+	
+	\section*{Procedure}
+	
+	\begin{enumerate}
+		\item Clean a 100 mL volumetric flask and rinse it with distilled water.
+		\item Pipette 63.5 mL of 0.1 M sodium acetate (\(\mathrm{CH_3COONa}\)) into the volumetric flask.
+		\item Add 36.5 mL of 0.1 M acetic acid (\(\mathrm{CH_3COOH}\)).
+		\item Mix the solution thoroughly by gentle swirling.
+		\item Measure the pH using a calibrated pH meter.
+		\item If necessary, adjust the pH:
+		\begin{itemize}
+			\item Add a few drops of 0.1 M acetic acid to decrease the pH.
+			\item Add a few drops of 0.1 M sodium acetate to increase the pH.
+		\end{itemize}
+		\item If the total volume is slightly less than 100 mL after pH adjustment, make up the volume to the mark with distilled water.
+		\item Mix well and label the solution as \textbf{0.1 M Acetate Buffer (pH 5.0)}.
+	\end{enumerate}
+	
+	\section*{Observation}
+	
+	The prepared solution was clear and colourless. The measured pH was approximately 5.0.
+	
+	\section*{Result}
+	
+	A 100 mL sample of 0.1 M acetate buffer of pH 5.0 was successfully prepared by mixing 63.5 mL of 0.1 M sodium acetate solution with 36.5 mL of 0.1 M acetic acid solution.
+	
+\end{document}
+>>>>>>> af2b87bca9c802b644b54b694f54664ddb47cf29

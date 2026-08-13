@@ -1,0 +1,75 @@
+# LaTeX auxiliary files
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex
+*.synctex.gz
+*.bcf
+*.run.xml
+*.nav
+*.snm
+*.vrb
+*.xdv
+
+# LaTeX build directories
+build/
+_build/
+
+# Temporary/editor files
+*~
+*.swp
+*.swo
+.DS_Store
+
+# Common LaTeX temporary files
+*.blg
+*.bbl
+*.idx
+*.ilg
+*.ind
+*.acn
+*.acr
+*.alg
+*.glg
+*.glo
+*.gls
+*.ist
+
+# OS/editor files
+.directory
+*.toc
+*.lof
+*.lot
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.bcf
+*.run.xml
+*.blg
+*.nav
+*.snm
+*.vrb
+
+# Editors
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# Temporary files
+*.tmp
+*.swp
